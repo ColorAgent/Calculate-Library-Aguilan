@@ -22,5 +22,18 @@ public class Calculate {
 		double sum = input1 + input2 + input3;
 		return sum/3;
 	}
-	public static double S
+	public static double toDegrees(double input1) {
+	double convert = input1;
+	double pi = 3.14159/180;
+	return convert * pi;
+	}
+	public static double toRadians(double input1) {
+	double convert = input1;
+	double pi = 180/3.14159;
+	return convert / pi;
+	}
+	public static double discriminant(double a,double b, double c) {
+	return (b*b) - (4 * a * c);
+	}
+	public static string
 }
