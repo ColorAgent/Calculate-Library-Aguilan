@@ -35,5 +35,10 @@ public class Calculate {
 	public static double discriminant(double a,double b, double c) {
 	return (b*b) - (4 * a * c);
 	}
-	public static string
+	public static string toImproperFrac(int input1, int input2, int input3);
+	return input1 * (input2/input3);
+	}
+	public static string toMixedNum(int input1, int input2);
+	return input1 / input2
+	}
 }
