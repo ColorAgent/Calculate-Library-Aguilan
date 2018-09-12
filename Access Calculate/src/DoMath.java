@@ -12,6 +12,8 @@ public class DoMath {
 		 System.out.println(Calculate.toDegrees(65));
 		 System.out.println(Calculate.toRadians(2));
 		 System.out.println(Calculate.discriminant(3,6,9));
+		 System.out.println(Calculate.toImproperFrac(3, 1, 2));
+		 System.out.println(Calculate.toMixedNum(7,2));
 
 	}
 	 
