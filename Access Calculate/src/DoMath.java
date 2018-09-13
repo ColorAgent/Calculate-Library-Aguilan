@@ -8,12 +8,13 @@ public class DoMath {
 		 System.out.println(Calculate.square(5)); 
 		 System.out.println(Calculate.cube(7));
 		 System.out.println(Calculate.average(7.35, 7.65));
-		 System.out.println(Calculate.average(5.5, 5.5, 21.4));
+		 System.out.println(Calculate.AltAverage(5.5, 5.5, 21.4));
 		 System.out.println(Calculate.toDegrees(65));
 		 System.out.println(Calculate.toRadians(2));
 		 System.out.println(Calculate.discriminant(3,6,9));
 		 System.out.println(Calculate.toImproperFrac(3, 1, 2));
 		 System.out.println(Calculate.toMixedNum(7,2));
+		 System.out.println(Calculate.foil(2, 3, 6, -7, "n"));
 
 	}
 	 

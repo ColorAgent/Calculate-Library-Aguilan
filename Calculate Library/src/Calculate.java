@@ -18,27 +18,46 @@ public class Calculate {
 		double sum = input1 + input2;
 		return sum/2; 
 	}
-	public static double average(double input1, double input2, double input3) {
+	public static double AltAverage(double input1, double input2, double input3) {
 		double sum = input1 + input2 + input3;
 		return sum/3;
 	}
 	public static double toDegrees(double input1) {
-	double convert = input1;
-	double pi = 3.14159/180;
-	return convert * pi;
+		double convert = input1;
+		double pi = 3.14159/180;
+		return convert * pi;
 	}
 	public static double toRadians(double input1) {
-	double convert = input1;
-	double pi = 180/3.14159;
-	return convert / pi;
+		double convert = input1;
+		double pi = 180/3.14159;
+		return convert / pi;
 	}
 	public static double discriminant(double a,double b, double c) {
-	return (b*b) - (4 * a * c);
+		return (b*b) - (4 * a * c);
 	}
-	public static string toImproperFrac(int input1, int input2, int input3);
-	return input1 * (input2/input3);
+	public static String toImproperFrac(int whole, int numerator, int denominator) {
+		String answer;
+		answer = ((whole*denominator + numerator) + "/" + denominator);
+		return answer;
 	}
-	public static string toMixedNum(int input1, int input2);
-	return input1 / input2
+	public static String toMixedNum(int numerator, int denominator) {
+		String answer;
+		answer = (numerator / denominator + " " + numerator % denominator + "/" + denominator);
+		return answer;
+	}
+	public static String foil(int a, int b, int c, int d, String x) {
+		String answer;
+		answer = (a*c) + "x" + "^2" + ((a*b) + b * c) + "x" + (b * d);
+		return answer; 
+	}
+	public static boolean isDivisibleBy(int numerator, int denominator) {
+		boolean answer;
+		answer = (numerator / denominator);
+		return 
 	}
 }
+
+
+
+
+
