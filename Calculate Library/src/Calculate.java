@@ -51,11 +51,33 @@ public class Calculate {
 		return answer; 
 	}
 	public static boolean isDivisibleBy(int numerator, int denominator) {
-		boolean answer;
-		answer = (numerator / denominator);
-		return 
+		return (numerator % denominator == 0);
+	}
+	public static double absValue(double input1) {
+		return (-input1);
+	}
+	public static double max(double input1, double input2) {
+		double answer;
+		answer = (input1 + input2);
+		return answer;
+	}
+	public static double max(double input1, double input2, double input3) {
+		double answer;
+		answer = (input1 + input2 + input3);
+		return answer;
+	}
+	public static int min(int input1, int input2) {
+		int answer;
+		answer = (input1 - input2);
+		return answer;
+	}
+	public static double round2(double input1) {
+		double answer;
+		answer = (input1);
+		return answer;
 	}
 }
+
 
 
 
