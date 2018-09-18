@@ -57,23 +57,30 @@ public class Calculate {
 		return (-input1);
 	}
 	public static double max(double input1, double input2) {
-		double answer;
-		answer = (input1 + input2);
-		return answer;
+		if (input1 > input2) {
+			return input1;
+		} else{
+			return input2;
+		}
+		
 	}
 	public static double max(double input1, double input2, double input3) {
-		double answer;
-		answer = (input1 + input2 + input3);
-		return answer;
+		if (input1 > input2) {
+			return input1;
+		} else{
+			return input2;
+		}
 	}
 	public static int min(int input1, int input2) {
-		int answer;
-		answer = (input1 - input2);
-		return answer;
+		if (input1 > input2) {
+			return input2;
+		} else{
+			return input1;
+		}
 	}
 	public static double round2(double input1) {
 		double answer;
-		answer = (input1);
+		answer = ((input1 + 0.005) * 100.00) / 10;
 		return answer;
 	}
 }
