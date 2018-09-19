@@ -70,6 +70,14 @@ public class Calculate {
 		} else{
 			return input2;
 		}
+		if (input3 > input1) {
+			return input3;
+		} else{
+			return input1;
+		if (input3 > input2) {
+			return input3;
+		} else{
+			return input1;
 	}
 	public static int min(int input1, int input2) {
 		if (input1 > input2) {
