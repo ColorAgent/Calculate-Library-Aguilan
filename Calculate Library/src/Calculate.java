@@ -21,7 +21,7 @@ public class Calculate {
 		return sum/2; 
 	}
 	// returns the average of three values passed to it
-	public static double Average(double input1, double input2, double input3) {
+	public static double average(double input1, double input2, double input3) {
 		double sum = input1 + input2 + input3;
 		return sum/3;
 	}
