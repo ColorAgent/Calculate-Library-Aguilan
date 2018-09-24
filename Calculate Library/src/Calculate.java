@@ -108,8 +108,41 @@ public class Calculate {
 		}
 		return noDecimalsNum / 100.00; // returns rounded value and makes it a double
 	}
-}
-
+	// raises a double to the power of an integer
+	public static double exponent(int input1, double input2) {
+		double answer = input1 * input2;
+		return answer;
+	}
+	// returns the factorial of the value passed by returning an integer and returning a double
+	public static int factorial(int input1) {
+	        if (input1 == 0)
+	        return 1;
+	        return input1 * factorial(input1 - 1);
+	}
+	// determines if an integer is a prime number or not
+	public static boolean isPrime(int input1) {
+		for(int i=2; i < input1; i++) {
+			if(input1 % i == 0)
+			return false;
+	    }
+	    return true;
+	}
+	// takes two integers and returns the greatest common factor
+	public static int gcf(int input1, int input2) {
+	        while(input1 != input2)
+	        {
+	            if(input1 > input2)
+	            	input1 -= input2;
+	            else
+	            	input2 -= input1;
+	        }
+	        return input1;
+	}
+	// accepts a double and returns a double rounded to two decimal places
+		
+	}
+	
+	
 
 
 
