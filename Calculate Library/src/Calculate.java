@@ -1,5 +1,5 @@
 /* This class contains methods that perform various math operations
- * @author Alex Aguilan
+ * @author Alex  Aguilan
  * Version September 6th
  */
 public class Calculate {
