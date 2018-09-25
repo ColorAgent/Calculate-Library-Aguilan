@@ -1,5 +1,5 @@
 /* This class is client code that uses the Calculate library to perform various mathematical task.
- * @author Alex  Aguilan
+ * @author Alex Aguilan
  * Version September 6th
  */
 public class DoMath {
