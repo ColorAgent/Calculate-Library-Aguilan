@@ -1,5 +1,5 @@
 /* This class is client code that uses the Calculate library to perform various mathematical task.
- * @author Alex  Aguilan
+ * @author Alex Aguilan
  * Version September 6th
  */
 public class DoMath {
@@ -26,6 +26,8 @@ public class DoMath {
 		 System.out.println(Calculate.isPrime(9));
          System.out.println(Calculate.gcf(28,8));
          System.out.println(Calculate.sqrt(7.51));
+		 System.out.println(Calculate.gcf(28,8));
+		 System.out.println(Calculate.sqrt(7.45));
 	}
 	 
 }
