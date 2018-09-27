@@ -1,5 +1,5 @@
 /* This class contains methods that perform various math operations
- * @author Alex Aguilan
+ * @author Alex Aguilan 
  * Version September 6th
  */
 public class Calculate {
@@ -153,8 +153,22 @@ public class Calculate {
 			guess += 0.1;
 		}
 		return round2(guessSqrt);
-		}
 	}
+	
+	// takes the a, b, and c of a quadratic equation(ax^2 + bx + c) and returns its roots
+	public static String(int a, int b, int c) {
+		double discr = discriminant(a, b, c);
+		if (discr < 0) {
+			return "no real roots";
+		} else if discr == 0 {
+			double root = (-b + sqrt(discr)) / (2 * a);
+			return round2(root) + "";
+		}
+			
+		 
+	}
+
+	
 
 
 	
