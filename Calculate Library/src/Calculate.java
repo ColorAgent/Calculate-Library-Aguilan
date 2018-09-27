@@ -129,6 +129,9 @@ public class Calculate {
 	}
 	// takes two integers and returns the greatest common factor
 	public static int gcf(int input1, int input2) {
+		if (input1 < 0) {
+			throw new IllegalArgumentException("You cannot guess a negative number");
+		}
 	        while(input1 != input2)
 	        {
 	            if(input1 > input2)
