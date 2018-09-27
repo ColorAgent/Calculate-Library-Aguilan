@@ -156,17 +156,24 @@ public class Calculate {
 	}
 	
 	// takes the a, b, and c of a quadratic equation(ax^2 + bx + c) and returns its roots
-	public static String(int a, int b, int c) {
+	public static String quadForm(int a, int b, int c) {
 		double discr = discriminant(a, b, c);
 		if (discr < 0) {
 			return "no real roots";
-		} else if discr == 0 {
+		} else if (discr == 0) {
 			double root = (-b + sqrt(discr)) / (2 * a);
 			return round2(root) + "";
+		} else {
+			double PosRootRounded  = round2((-b + sqrt(discr)) / (2 * a));
+			double NegRootRounded  = round2((-b - sqrt(discr)) / (2 * a));
+			if (PosRootRounded >= NegRootRounded) { //a variation of max with and added it between
+				return PosRootRounded + "and" + NegRootRounded;
+			} else {
+				return NegRootRounded + "and" + PosRootRounded;
+			}
 		}
-			
-		 
 	}
+}
 
 	
 
