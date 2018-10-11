@@ -1,7 +1,7 @@
 /* This class contains methods that perform various math operations
  * @author Alex Aguilan  
  * Version September 6th
- */
+ */a
 	public class Quadratic {
 		public static String quadDescriber (double a, double b, double c) {
 			String GraphOpens;
