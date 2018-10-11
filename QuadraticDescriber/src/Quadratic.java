@@ -7,7 +7,7 @@
 			String GraphOpens;
 			String Equation = "y = " + a + "^2 + " + b + "x + " + c;
 			double AxisOfSym = (b * -1) / (2 * a);
-			double YOfVertex = (a * AxisOfSymmetry * AxisOfSymmetry) + (b * AxisOfSymmetry) + c;
+			double YOfVertex = (a * AxisOfSym * AxisOfSym) + (b * AxisOfSym) + c;
 			String xIntercept = quadForm(a, b, c);
 			
 			//if axis of sym is -0.0 turn it into 0.0
