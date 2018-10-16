@@ -23,6 +23,8 @@ public class QuadraticClient {
 			double c = UserInputs.nextDouble();
 			System.out.println();
 			
+			System.out.println(Quadratic.quadrDescriber(a, b, c));
+			
 			//ask the user if the user wants to quit and closes the loop if yes
 			System.out.println("Do you want to keep going? (Type \"quit\" to end)");
 			if(UserInputs.next().equals("quit")){

@@ -3,7 +3,7 @@
  * Version September 6th
  */
 	public class Quadratic {
-		public static String quadDescriber (double a, double b, double c) {
+		public static String quadrDescriber (double a, double b, double c) {
 			//declare variables
 			String GraphOpens;
 			String Formula = "y = " + a + "^2 + " + b + "x + " + c;
