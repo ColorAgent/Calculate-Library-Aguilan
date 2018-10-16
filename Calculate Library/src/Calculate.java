@@ -28,13 +28,13 @@ public class Calculate {
 	// converts an angle measure given in radians into degrees
 	public static double toDegrees(double input1) {
 		double convert = input1;
-		double pi = 3.14159/180; // conversion factor for radians into degrees
+		double pi = 180/3.14159; // conversion factor for radians into degrees
 		return convert * pi;
 	}
 	// converts degrees into radians units
 	public static double toRadians(double input1) {
 		double convert = input1;
-		double pi = 180/3.14159; // conversion factor for degrees to radians
+		double pi = 3.14159/180; // conversion factor for degrees to radians
 		return convert / pi;
 	}
 	// part of the quadratic equation (b^2) - 4 * a * c 
