@@ -9,11 +9,11 @@ import java.util.*;
 public class QuadraticClient {
 	public static void main(String[] args) {
 		Scanner UserInputs = new Scanner(System.in);
-		boolean keepgoing = true;
+		boolean Continue = true;
 		System.out.println("Welcome to Quadratic Describer" + "\nThis will provide values for a, b, and c!");
-		System.out.println("Please input a double");
+		
 		//ask user for variables and print description of graph
-		while(keepgoing){
+		while(Continue){
 			System.out.println();
 			System.out.print("a= ");
 			double a = UserInputs.nextDouble();
@@ -26,7 +26,7 @@ public class QuadraticClient {
 			//ask the user if the user wants to quit and closes the loop if yes
 			System.out.println("Do you want to keep going? (Type \"quit\" to end)");
 			if(UserInputs.next().equals("quit")){
-			keepgoing = false;
+			Continue = false;
 			UserInputs.close();
 			}
 		}
