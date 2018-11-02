@@ -1,7 +1,7 @@
 /* This class contains methods that perform various math operations
  * @author Alex Aguilan  
  * Version September 6th
- */a
+ */
 public class Calculate {
 	// returns the square of the input
 	public static int square(int number) {
