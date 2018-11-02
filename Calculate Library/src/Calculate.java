@@ -50,7 +50,7 @@ public class Calculate {
 	// converts an improper fraction into a mixed number
 	public static String toMixedNum(int numerator, int denominator) {
 		String answer;
-		answer = (numerator / denominator + " " + numerator % denominator + "/" + denominator);
+		answer = (numerator / denominator + "_" + numerator % denominator + "/" + denominator);
 		return answer;
 	}
 	// converts a binomial multiplication into the quadratic equation form (ax+b)(cx-d) -> ax^2+bx+c
@@ -98,15 +98,13 @@ public class Calculate {
 	}
 	// rounds a number to two decimal places
 	public static double round2(double input1) {
-		int noDecimalsNum = (int) (input1 * 1000);
-		int thousandthDigit = noDecimalsNum % 10;
-		noDecimalsNum /= 10; // increments if the number is positive and decrements if the number is negative
-		if (thousandthDigit >= 5 && noDecimalsNum > 0) {
-			noDecimalsNum += 1;
-		} else if (thousandthDigit <= 5 && noDecimalsNum < 0) {
-			noDecimalsNum -=1;
+		if(input1 >= 0) {
+			input1 += 0.005;
+		}else{
+			input1 += -0.005;
 		}
-		return noDecimalsNum / 100.00; // returns rounded value and makes it a double
+		int roundedNum = (int) (input1 * 100);
+		return (((double) roundedNum) / 100);	
 	}
 	// raises a double to the power of an integer
 	public static double exponent(int input1, double input2) {
