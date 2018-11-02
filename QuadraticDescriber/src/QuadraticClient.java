@@ -32,5 +32,5 @@ public class QuadraticClient {
 			UserInputs.close();
 			}
 		}
-	}sa
+	}
 }
