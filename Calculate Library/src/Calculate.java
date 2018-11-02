@@ -56,7 +56,7 @@ public class Calculate {
 	// converts a binomial multiplication into the quadratic equation form (ax+b)(cx-d) -> ax^2+bx+c
 	public static String foil(int a, int b, int c, int d, String x) {
 		String answer;
-		answer = (a*c) + "x" + "^2" + ((a*b) + b * c) + "x" + (b * d);
+		answer = ((a * c) + x + "^2 + " + ((a * d) + (b * c)) + x + " + " + (b * d));
 		return answer; 
 	}
 	// determines if one integer is evenly divisible by another
