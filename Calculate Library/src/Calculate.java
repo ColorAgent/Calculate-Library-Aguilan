@@ -140,6 +140,7 @@ public class Calculate {
 	        return input1;
 	}
 	// accepts a double and returns a double rounded to two decimal places
+	// figure out a stopping point you idiot
 	public static double sqrt(double input1) {
 		double guess = 0.1;
 		double guessSqrt = 0;
@@ -148,7 +149,7 @@ public class Calculate {
 		}
 		while (round2(guessSqrt * guessSqrt) !=input1) {
 			guessSqrt = 0.5 * (input1 / guess);
-			guess += 0.1;
+			guess += 0.01;
 		}
 		return round2(guess);
 	}
