@@ -150,7 +150,7 @@ public class Calculate {
 			guessSqrt = 0.5 * (input1 / guess);
 			guess += 0.1;
 		}
-		return round2(guessSqrt);
+		return round2(guess);
 	}
 	
 	// takes the a, b, and c of a quadratic equation(ax^2 + bx + c) and returns its roots
