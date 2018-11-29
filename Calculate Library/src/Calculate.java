@@ -146,7 +146,7 @@ public class Calculate {
 		if (input1 < 0) {
 			throw new IllegalArgumentException("You cannot guess a negative number");
 		}
-		while (round2(guessSqrt * guessSqrt) !=input1) {
+		while (round2(guessSqrt * guessSqrt) >= 0.005) {
 			guessSqrt = 0.5 * (input1 / guess);
 			guess += 0.1;
 		}
